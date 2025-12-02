@@ -17,12 +17,12 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@orpc/server": "catalog:",
     "@orpc/client": "catalog:",
     "@orpc/openapi": "catalog:",
+    "@orpc/server": "catalog:",
     "@orpc/zod": "catalog:",
-    "next": "15.5.4",
-    "dotenv": "^17.2.2",
-    "zod": "^4.1.11"
+    "dotenv": "^17.2.3",
+    "next": "16.0.6",
+    "zod": "^4.1.13"
   }
 }
