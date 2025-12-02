@@ -87,27 +87,27 @@ export default function Testimonials() {
               >
                 <div className="flex flex-col gap-6">
                   {/* Top Card */}
-                  <div className="relative h-[280px] border border-neutral-800 bg-neutral-900/20 p-8 transition-colors duration-300 hover:bg-neutral-900/40">
+                  <div className="group relative h-[280px] border border-neutral-800 bg-neutral-900/20 p-8 transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-neutral-900/60 hover:shadow-2xl hover:shadow-white/5">
                     <div className="flex flex-col gap-4">
-                      <div className="relative h-16 w-16 overflow-hidden grayscale">
+                      <div className="relative h-16 w-16 overflow-hidden rounded-full border border-white/10 transition-all duration-500 group-hover:border-white/30 group-hover:scale-110">
                         <Image
                           alt={testimonial.name}
-                          className="object-cover"
+                          className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                           fill
                           src={testimonial.image}
                         />
                       </div>
                       <div>
-                        <h3 className="font-medium text-white text-xl">
+                        <h3 className="font-medium text-white text-xl transition-colors duration-300 group-hover:text-primary">
                           {testimonial.name}
                         </h3>
-                        <p className="mt-1 text-neutral-500 text-sm">
+                        <p className="mt-1 text-neutral-500 text-sm transition-colors duration-300 group-hover:text-neutral-400">
                           {testimonial.role}
                         </p>
                       </div>
                     </div>
 
-                    <div className="absolute right-6 bottom-4 select-none font-black text-6xl text-neutral-800/50">
+                    <div className="absolute right-6 bottom-4 select-none font-black text-6xl text-neutral-800/50 transition-all duration-500 group-hover:scale-110 group-hover:text-neutral-800/80">
                       {testimonial.number}
                     </div>
                   </div>

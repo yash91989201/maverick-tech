@@ -42,9 +42,9 @@ export default function Hero() {
           <div className="flex flex-col items-center justify-end pb-4">
             <Link
               className="group flex cursor-pointer flex-col items-center gap-2"
-              href="/projects"
+              href="#projects"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 backdrop-blur-sm transition-colors duration-300 group-hover:border-white">
+              <div className="flex h-12 w-12 animate-bounce items-center justify-center rounded-full border border-white/30 backdrop-blur-sm transition-colors duration-300 group-hover:border-white">
                 <ArrowDown className="h-5 w-5 text-white transition-transform duration-300 group-hover:translate-y-1" />
               </div>
               <span className="text-[10px] text-white/60 uppercase tracking-[0.2em] transition-colors group-hover:text-white">

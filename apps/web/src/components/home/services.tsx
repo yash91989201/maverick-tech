@@ -47,18 +47,18 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {services.map((service, index) => (
             <Link
-              className="group relative flex h-48 cursor-pointer items-center justify-between rounded-sm border border-white/20 p-8 transition-colors duration-300 hover:bg-white/5"
+              className="group relative flex h-48 cursor-pointer items-center justify-between rounded-sm border border-white/20 bg-white/5 p-8 transition-all duration-500 hover:border-white/40 hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5 hover:-translate-y-1"
               href={service.href}
               key={index.toString()}
             >
-              <h3 className="whitespace-pre-line font-light text-2xl leading-tight md:text-3xl">
+              <h3 className="whitespace-pre-line font-light text-2xl leading-tight transition-transform duration-500 group-hover:translate-x-2 md:text-3xl">
                 {service.title}
               </h3>
 
-              <div className="relative h-16 w-16 shrink-0">
+              <div className="relative h-16 w-16 shrink-0 overflow-hidden">
                 <Image
                   alt={service.title.replace("\n", " ")}
-                  className="object-contain"
+                  className="object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
                   fill
                   src={service.icon}
                 />

@@ -7,7 +7,7 @@ export default function Header() {
     { to: "/about", label: "ABOUT" },
     { to: "/services", label: "JOURNAL" },
     { to: "/projects", label: "WORK" },
-    { to: "/contact-us", label: "CONTACT" },
+    { to: "/contact", label: "CONTACT" },
   ] as const;
 
   return (

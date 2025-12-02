@@ -51,16 +51,16 @@ export default function Stats() {
         <div className="grid grid-cols-1 border-neutral-800 border-t border-l md:grid-cols-2 lg:grid-cols-3">
           {stats.map((stat) => (
             <div
-              className="group relative border-neutral-800 border-r border-b bg-neutral-900/10 p-10 backdrop-blur-sm transition-colors hover:bg-neutral-900/30"
+              className="group relative border-neutral-800 border-r border-b bg-neutral-900/10 p-10 backdrop-blur-sm transition-all duration-500 hover:border-white/20 hover:bg-neutral-900/40 hover:shadow-2xl hover:shadow-white/5 hover:-translate-y-1"
               key={stat.id}
             >
               {/* Decorative dot */}
-              <div className="-top-1.5 -right-1.5 absolute h-3 w-3 rounded-full bg-pink-600 opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="-top-1.5 -right-1.5 absolute h-3 w-3 scale-0 rounded-full bg-pink-600 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100 group-hover:shadow-[0_0_10px_rgba(219,39,119,0.5)]" />
 
-              <div className="mb-2 font-bold text-5xl tracking-tight">
+              <div className="mb-2 font-bold text-5xl tracking-tight transition-transform duration-500 group-hover:scale-105 group-hover:text-white">
                 {stat.value}
               </div>
-              <div className="text-neutral-400 text-sm uppercase tracking-wider">
+              <div className="text-neutral-400 text-sm uppercase tracking-wider transition-colors duration-300 group-hover:text-neutral-300">
                 {stat.label}
               </div>
             </div>

@@ -82,25 +82,28 @@ export default function Journals() {
                 key={journal.id}
               >
                 <Link
-                  className="group relative flex h-[380px] flex-col justify-between border border-neutral-800 bg-neutral-900/50 p-6 transition-colors duration-300 hover:bg-neutral-900"
+                  className="group relative flex h-[380px] flex-col justify-between border border-neutral-800 bg-neutral-900/50 p-6 transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:bg-neutral-900 hover:shadow-2xl hover:shadow-white/5"
                   href={journal.href}
                 >
                   <div className="relative z-10 flex h-full flex-col justify-between">
                     <div>
-                      <span className="mb-4 inline-block border border-neutral-700 px-3 py-1 text-neutral-400 text-xs uppercase tracking-wider transition-colors group-hover:border-white/50 group-hover:text-white">
+                      <span className="mb-4 inline-block border border-neutral-700 px-3 py-1 text-neutral-400 text-xs uppercase tracking-wider transition-all duration-300 group-hover:border-white/50 group-hover:bg-white/10 group-hover:text-white">
                         {journal.category}
                       </span>
-                      <h3 className="font-medium text-2xl text-neutral-200 leading-tight transition-colors group-hover:text-white">
+                      <h3 className="font-medium text-2xl text-neutral-200 leading-tight transition-all duration-300 group-hover:translate-x-1 group-hover:text-white">
                         {journal.title}
                       </h3>
                     </div>
 
-                    <div className="flex justify-end">
-                      <ArrowUpRight className="h-6 w-6 text-neutral-500 transition-colors group-hover:text-white" />
+                    <div className="flex justify-end overflow-hidden">
+                      <div className="relative">
+                        <ArrowUpRight className="h-6 w-6 text-neutral-500 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white" />
+                        <div className="absolute -bottom-1 -left-1 h-8 w-8 rounded-full bg-white/10 blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                      </div>
                     </div>
                   </div>
 
-                  <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-transparent to-black/20" />
+                  <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-transparent to-black/20 transition-opacity duration-500 group-hover:opacity-0" />
                 </Link>
               </CarouselItem>
             ))}
