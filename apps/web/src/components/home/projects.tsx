@@ -6,37 +6,37 @@ const projects = [
     title: "GLOSSY",
     category: "Branding",
     image: "/assets/project-1.jpg",
-    href: "/projects/glossy",
+    href: "/projects" as const,
   },
   {
     title: "BOXKIT",
     category: "Branding",
     image: "/assets/project-2.jpg",
-    href: "/projects/boxkit",
+    href: "/projects" as const,
   },
   {
     title: "LANDSCAPE",
     category: "Branding",
     image: "/assets/project-3.jpg",
-    href: "/projects/landscape",
+    href: "/projects" as const,
   },
   {
     title: "BRANDO",
     category: "Branding",
     image: "/assets/project-4.jpg",
-    href: "/projects/brando",
+    href: "/projects" as const,
   },
   {
     title: "TABZEN",
     category: "Branding",
     image: "/assets/project-5.jpg",
-    href: "/projects/tabzen",
+    href: "/projects" as const,
   },
   {
     title: "MINIO",
     category: "Branding",
     image: "/assets/project-6.jpg",
-    href: "/projects/minio",
+    href: "/projects" as const,
   },
 ];
 
