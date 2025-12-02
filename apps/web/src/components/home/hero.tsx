@@ -58,7 +58,7 @@ export default function Hero() {
             <p className="mb-4 max-w-xs text-right font-light text-lg text-white/90 md:text-xl">
               Enhancing potential and driving prosperity.
             </p>
-            <div className="h-[1px] w-full bg-white/20" />
+            <div className="h-px w-full bg-white/20" />
           </div>
         </div>
       </div>
